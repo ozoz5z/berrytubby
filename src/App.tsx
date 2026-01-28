@@ -190,7 +190,7 @@ const BirdCard: React.FC<{ bird: Bird, onUpdateTraits: (id: string, newTraits: s
       <div className="p-4 md:p-6 flex flex-col flex-grow">
         <div className="flex justify-between items-start mb-1">
 <h3 className="text-lg md:text-2xl font-black tracking-tighter text-white group-hover:text-[#00f2ff] transition-colors flex items-baseline gap-2">
-  <span className="text-[10px] md:text-xs font-mono text-white/20 tracking-tight">
+  <span className="text-[10px] md:text-xs font-mono text-white/80 tracking-tight">
     {bird.id.padStart(2, '0')}
   </span>
   <span>{bird.name}</span>
