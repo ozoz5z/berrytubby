@@ -215,8 +215,8 @@ const BirdCard: React.FC<{ bird: Bird, onUpdateTraits: (id: string, newTraits: s
         <a href={bird.snsUrl} target="_blank" rel="noopener noreferrer" 
   className={`mt-auto inline-flex items-center gap-2 text-[9px] md:text-[10px] font-black transition-all duration-300 py-2 w-full justify-center rounded-xl border border-white/20 text-white hover:bg-[#00f2ff] hover:text-black hover:border-[#00f2ff] ${bird.snsUrl === '#' ? 'hidden' : 'opacity-100'}`}
 >
-  <span>인스타그램</span>
-</a>
+<span>인스타그램</span>
+        </a>
       </div>
     );
 };
