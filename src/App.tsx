@@ -1,6 +1,6 @@
 
 import React, { useState, useMemo } from 'react';
-import { GoogleGenAI } from "@google/genai";
+import { GoogleGenerativeAI } from "@google/generative-ai";
 
 // ==========================================
 // 1. TYPES (데이터 타입 정의)
