@@ -212,14 +212,18 @@ const BirdCard: React.FC<{ bird: Bird, onUpdateTraits: (id: string, newTraits: s
             ) : <p className="text-gray-300 leading-relaxed text-[10px] md:text-xs italic cursor-pointer" onClick={() => setIsEditing(true)}>"{bird.traits}"</p>}
           </div>
         </div>
-<a href={bird.snsUrl} target="_blank" rel="noopener noreferrer" 
-          className={`mt-auto inline-flex items-center gap-2 text-[9px] md:text-[10px] font-black transition-all duration-300 py-2 w-full justify-center rounded-xl border border-white/20 text-white hover:bg-[#00f2ff] hover:text-black hover:border-[#00f2ff] ${bird.snsUrl === '#' ? 'hidden' : 'opacity-100'}`}
-        >
-          <span>인스타그램</span>
-        </a>
+        {bird.snsUrl !== '#' && (
+          <a href={bird.snsUrl} target="_blank" rel="noopener noreferrer" 
+            className="mt-auto inline-flex items-center gap-2 text-[9px] md:text-[10px] font-black transition-all duration-300 py-2 w-full justify-center rounded-xl border border-white/20 text-white hover:bg-[#00f2ff] hover:text-black hover:border-[#00f2ff]"
+          >
+            <span>인스타그램</span>
+          </a>
+        )}
       </div>
-    );
-  };
+    </div>
+  );
+};
+
 const AdminPanel: React.FC<{ isOpen: boolean, onClose: () => void, onAdd: (b: any) => void }> = ({ isOpen, onClose, onAdd }) => {
   const [password, setPassword] = useState('');
   const [isUnlocked, setIsUnlocked] = useState(false);
