@@ -36,7 +36,7 @@ interface Parent {
 // ==========================================
 const INITIAL_BIRDS: Bird[] = [
   { 
-    id: '1', year: '2023', name: '01 둥이', birthDate: '2023.04.28', location: '경기 포천시', traits: '첫째답게 의젓하고 동생들을 잘 돌봅니다.', snsUrl: '#',
+    id: '1', year: '2023', name: '둥이', birthDate: '2023.04.28', location: '경기 포천시', traits: '첫째답게 의젓하고 동생들을 잘 돌봅니다.', snsUrl: '#',
     images: { recent: 'https://picsum.photos/seed/bird1r/500/500', baby: 'https://picsum.photos/seed/bird1b/500/500' }
   },
   { 
@@ -181,7 +181,7 @@ const BirdCard: React.FC<{ bird: Bird, onUpdateTraits: (id: string, newTraits: s
       <div className="relative aspect-square cursor-pointer overflow-hidden" onClick={() => setShowBaby(!showBaby)}>
         <img src={showBaby ? bird.images.baby : bird.images.recent} alt={bird.name} className={`w-full h-full object-cover transition-all duration-1000 ${showBaby ? 'scale-110' : 'scale-100'}`} />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
-          <span className="text-[10px] font-black bg-white/20 backdrop-blur-xl px-4 py-2 rounded-full text-white border border-white/20">
+          <span className="text-[10px] font-black bg-white/80 backdrop-blur-xl px-4 py-2 rounded-full text-white border border-white/20">
             {showBaby ? '최근 사진 보기' : '아기 시절 보기'}
           </span>
         </div>
