@@ -220,12 +220,10 @@ const BirdCard: React.FC<{ bird: Bird, onUpdateTraits: (id: string, newTraits: s
       </div>
     );
 };
+
 const AdminPanel: React.FC<{ isOpen: boolean, onClose: () => void, onAdd: (b: any) => void }> = ({ isOpen, onClose, onAdd }) => {
   const [password, setPassword] = useState('');
   const [isUnlocked, setIsUnlocked] = useState(false);
-  const [formData, setFormData] = useState({ name: '', year: '2025', birthDate: '', location: '', traits: '', snsUrl: '' });
-  const [isGenerating, setIsGenerating] = useState(false);
-
   if (!isOpen) return null;
 
   const handlePasswordSubmit = (e: React.FormEvent) => {
