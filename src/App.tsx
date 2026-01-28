@@ -40,7 +40,7 @@ const INITIAL_BIRDS: Bird[] = [
     images: { recent: 'https://picsum.photos/seed/bird1r/500/500', baby: 'https://picsum.photos/seed/bird1b/500/500' }
   },
   { 
-    id: '2', year: '2025-03', name: '앵두', birthDate: '2025.03.27', location: '충북 청주시 (오창)', traits: '앵두같은 부리가 귀여운 봄의 전령사입니다.', snsUrl: '#',
+    id: '2', year: '2025-03', name: '앵두', birthDate: '2025.03.27', location: '충북 청주시 (오창)', traits: '앵두같은 부리가 귀여운 봄의 전령사입니다.', snsUrl: 'https://www.instagram.com/_.25o3e7._/',
     images: { recent: 'https://picsum.photos/seed/bird3r/500/500', baby: 'https://picsum.photos/seed/bird3b/500/500' }
   },
   { 
