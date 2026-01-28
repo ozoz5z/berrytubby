@@ -36,7 +36,7 @@ interface Parent {
 // ==========================================
 const INITIAL_BIRDS: Bird[] = [
   { 
-    id: '1', year: '2023', name: '둥이', birthDate: '2023.04.28', location: '경기 포천시', traits: '첫째답게 의젓하고 동생들을 잘 돌봅니다.', snsUrl: '#',
+    id: '1', year: '2023', name: '01 둥이', birthDate: '2023.04.28', location: '경기 포천시', traits: '첫째답게 의젓하고 동생들을 잘 돌봅니다.', snsUrl: '#',
     images: { recent: 'https://picsum.photos/seed/bird1r/500/500', baby: 'https://picsum.photos/seed/bird1b/500/500' }
   },
   { 
