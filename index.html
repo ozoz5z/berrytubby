@@ -1,26 +1,41 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-<style>
-  .neon-blue {
-    color: #00f2ff;
-    text-shadow: 0 0 10px rgba(0, 242, 255, 0.8), 0 0 20px rgba(0, 242, 255, 0.5);
-  }
-  .neon-green {
-    color: #00ff88;
-    text-shadow: 0 0 10px rgba(0, 255, 136, 0.8), 0 0 20px rgba(0, 255, 136, 0.5);
-  }
-  .glass {
-    background: rgba(255, 255, 255, 0.03);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-  }
-  .accent-gradient-bg {
-    background: linear-gradient(135deg, #00f2ff 0%, #00ff88 100%);
-  }
-</style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Berry Tubby Family Tree</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* 네온 텍스트 효과 */
+      .neon-blue {
+        color: #00f2ff !important;
+        text-shadow: 0 0 10px rgba(0, 242, 255, 0.8), 0 0 20px rgba(0, 242, 255, 0.5);
+      }
+      .neon-green {
+        color: #00ff88 !important;
+        text-shadow: 0 0 10px rgba(0, 255, 136, 0.8), 0 0 20px rgba(0, 255, 136, 0.5);
+      }
+      /* 유리창 효과 (카드 디자인) */
+      .glass {
+        background: rgba(255, 255, 255, 0.03) !important;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+      }
+      /* 포인트 컬러 그라데이션 */
+      .accent-gradient-bg {
+        background: linear-gradient(135deg, #00f2ff 0%, #00ff88 100%) !important;
+      }
+      /* 배경 애니메이션 */
+      @keyframes pulse {
+        0%, 100% { opacity: 0.5; }
+        50% { opacity: 0.8; }
+      }
+      .animate-pulse {
+        animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+    </style>
   </head>
-  <body>
+  <body style="margin: 0; background-color: #050505;">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
