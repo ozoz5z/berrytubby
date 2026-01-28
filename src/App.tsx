@@ -217,8 +217,8 @@ const BirdCard: React.FC<{ bird: Bird, onUpdateTraits: (id: string, newTraits: s
 >
   <span>인스타그램</span>
 </a>
-    </div>
-  );
+      </div>
+    );
 };
 
 const AdminPanel: React.FC<{ isOpen: boolean, onClose: () => void, onAdd: (b: any) => void }> = ({ isOpen, onClose, onAdd }) => {
